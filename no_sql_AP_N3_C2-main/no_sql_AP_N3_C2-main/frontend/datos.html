@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/images/among_us_player_red_icon_156942.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/brite.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <!-- jQuery necesario para DataTables -->
+    <script src="./scripts/jQuery v4.0.0.js"></script>
+
+    <!-- Estilos y Scripts de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
+    <!-- Tu script de control -->
+    <script src="./scripts/datos.js"></script>
+
+    <title>Visualización de Datos</title>
+</head>
+
+<body>
+    <!-- Barra de Navegación Actualizada -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./datos.html">Datos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./formulario.html">Formulario Registro</a>
+                        </li>
+                        <!-- NUEVO: Botón para ir al formulario de mascotas -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mascota.html">Registro Mascota</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br />
+
+    <!-- TABLA 1: USUARIOS -->
+    <div class="container">
+        <p class="h3">Listado de Usuarios Registrados</p>
+        <br />
+        <table id="tablaUsuarios" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>RUT</th>
+                    <th>Nacionalidad</th>
+                    <th>Celular</th>
+                    <th>Email</th>
+                    <th>F. Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- DataTables carga los datos aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <br /><hr /><br />
+
+    <!-- NUEVO: TABLA 2: MASCOTAS -->
+    <div class="container mb-5">
+        <p class="h3">Listado de Mascotas Registradas</p>
+        <br />
+        <table id="tablaMascotas" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Raza</th>
+                    <th>Edad (Años)</th>
+                    <th>Peso (Kg)</th>
+                    <th>Color</th>
+                    <th>Sexo</th>
+                    <th>F. Nacimiento</th>
+                    <th>Observaciones</th>
+                    <th>Dueño (Usuario)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- DataTables carga los datos aquí -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
